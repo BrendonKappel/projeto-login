@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                Foto
+                
             </div>
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem vindo(a) novamente. Faça seu login para acessar sua conta e poder fazer as configurações de ambiente.</p>
-                <form action="login.php" method="POST">
-                    
+                <h1><strong>Login</strong></h1>
+                <p id="bem_vindo">Seja bem vindo(a) novamente. Faça seu login para acessar sua conta e poder fazer as configurações de ambiente.</p>
+                <form action="login.php" method="POST" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" class="inp" required placeholder="seu e-mail" autocomplete="email">
+                        <label for="iemail"></label></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" class="inp" required minlength="8" maxlength="20" placeholder="sua senha" autocomplete="current-password">
+                        <label for="isenha"></label></label>
+                    </div>
+                    <input type="submit" value="Entrar" class="sub" id="entrar">  
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <span class="material-icons">mail</span>
+                    </a>
                 </form>
             </div>
         </section>

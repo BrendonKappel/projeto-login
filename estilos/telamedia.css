@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+section#login {
+    width: 900px;
+    height: 300px;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin-left: 450px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+p#bem_vindo {
+    text-align: justify;
+    width: 250px;
+    margin-left: 25px;
+    
+    
+}
